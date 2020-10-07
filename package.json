@@ -1,5 +1,5 @@
 {
-  "name": "react-native-toast",
+  "name": "@lp/react-native-toast",
   "version": "0.0.3",
   "description": "react-native smart tip, including Toast、Modal、SnackBar",
   "main": "index.js",
