@@ -1,0 +1,55 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn publish
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npmjs.org/-/user/org.couchdb.user:lucky-liu: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:141322:19)
+      at listOnTimeout (internal/timers.js:554:17)
+      at processTimers (internal/timers.js:497:7)
+
+npm manifest: 
+  {
+    "name": "@lp/react-native-toast",
+    "version": "0.0.3",
+    "description": "react-native smart tip, including Toast、Modal、SnackBar",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "types": "./index.d.ts",
+    "keywords": [
+      "react-native",
+      "Toast",
+      "SnackBar",
+      "Modal",
+      "Component",
+      "ios",
+      "android",
+      "tip",
+      "Notification"
+    ],
+    "author": "Liup007",
+    "license": "MIT",
+    "dependencies": {
+      "react-native-root-siblings": "^3.2.3"
+    },
+    "devDependencies": {}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
