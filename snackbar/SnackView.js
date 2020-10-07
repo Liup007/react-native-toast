@@ -105,7 +105,7 @@ class SnackView extends Component{
                     maxWidth: (this.state.deviceWidth - 40)*0.2,
                     height: contentHeight
                 }]} onPress={() => this.onHideAnimated(false)} activeOpacity={0.8}>
-                    <Text style={[styles.content_title,{color: this.props.actionTextColor}]} numberOfLines={1}>{this.props.actionText}</Text>
+                    <Text style={[styles.content_title,{color: this.props.actionTextColor}, this.props.style]} numberOfLines={1}>{this.props.actionText}</Text>
                 </TouchableOpacity>
             )
         }
@@ -261,7 +261,7 @@ const styles = StyleSheet.create({
         paddingRight: 15
     },
     content_title: {
-        fontSize: 16,
+        fontSize: 12,
         marginRight: 10
     },
     content_btn: {
