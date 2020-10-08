@@ -104,8 +104,8 @@ class SnackView extends Component{
                 <TouchableOpacity style={[styles.content_btn,{
                     maxWidth: (this.state.deviceWidth - 40)*0.2,
                     height: contentHeight
-                }]} onPress={() => this.onHideAnimated(false)} activeOpacity={0.8}>
-                    <Text style={[styles.content_title,{color: this.props.actionTextColor}, this.props.style]} numberOfLines={1}>{this.props.actionText}</Text>
+                }, this.props.style]} onPress={() => this.onHideAnimated(false)} activeOpacity={0.8}>
+                    <Text style={[styles.content_title,{color: this.props.actionTextColor}]} numberOfLines={1}>{this.props.actionText}</Text>
                 </TouchableOpacity>
             )
         }
@@ -123,11 +123,11 @@ class SnackView extends Component{
             <View style={[styles.base,baseStyle]} pointerEvents="box-none">
                 <Animated.View style={[styles.container,containerStyle,shadowStyle]} {...this._panResponder.panHandlers}>
                     <View style={statusBarStyle}/>
-                    <View style={[styles.content,contentStyles]}>
+                    <View style={[styles.content,contentStyles, this.props.style]}>
                         <Text style={[styles.content_title,{
                             color: this.props.textColor,
                             maxWidth: (this.state.deviceWidth - 40)*0.8
-                        }, this.props.style]} numberOfLines={this.props.numberOfLines}>
+                        }]} numberOfLines={this.props.numberOfLines}>
                             {this.props.data}
                         </Text>
                         {actionView}
