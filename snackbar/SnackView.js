@@ -127,7 +127,7 @@ class SnackView extends Component{
                         <Text style={[styles.content_title,{
                             color: this.props.textColor,
                             maxWidth: (this.state.deviceWidth - 40)*0.8
-                        }]} numberOfLines={this.props.numberOfLines}>
+                        }, this.props.style]} numberOfLines={this.props.numberOfLines}>
                             {this.props.data}
                         </Text>
                         {actionView}
